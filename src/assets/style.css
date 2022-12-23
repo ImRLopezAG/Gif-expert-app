@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-gray-100;
+}
+
+.title {
+  @apply text-4xl;
+  @apply font-bold;
+  @apply text-center;
+  @apply text-gray-800;
+  @apply mt-1 mb-4;
+}
 .grid-card {
   @apply grid grid-cols-1 gap-3;
   @apply overflow-hidden;
@@ -11,9 +22,7 @@
   @apply xl:grid-cols-5;
   @apply 2xl:grid-cols-6;
 }
-body {
-  @apply bg-gray-100;
-}
+
 .card {
   @apply bg-white;
   @apply rounded-lg;
@@ -43,4 +52,30 @@ body {
   @apply outline-none;
   @apply placeholder:text-gray-400 placeholder:italic;
   @apply border border-transparent focus:border-blue-800;
+}
+select {
+  @apply w-16 px-3 py-4 ml-2;
+  @apply bg-white;
+  @apply rounded-lg;
+  @apply shadow-md;
+  @apply overflow-hidden;
+  @apply outline-none;
+  @apply placeholder:text-gray-400 placeholder:italic;
+  @apply border border-transparent;
+  @apply cursor-pointer;
+  @apply focus:border-blue-800;
+}
+
+.search-button {
+  @apply w-16 p-3 ml-2;
+  @apply rounded-lg;
+  @apply shadow-md;
+  @apply overflow-hidden;
+  @apply outline-none;
+  @apply text-white;
+  @apply font-bold text-2xl;
+  @apply cursor-pointer;
+  @apply bg-gradient-to-r from-blue-400 to-blue-600;
+  @apply hover:from-blue-600 hover:to-blue-400;
+  @apply transition duration-1000 ease-in-out;
 }
