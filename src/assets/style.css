@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-card {
+  @apply grid grid-cols-1 gap-3;
+  @apply overflow-hidden;
+  @apply sm:grid-cols-2;
+  @apply md:grid-cols-3;
+  @apply lg:grid-cols-4;
+  @apply xl:grid-cols-5;
+  @apply 2xl:grid-cols-6;
+}
+body {
+  @apply bg-gray-100;
+}
+.card {
+  @apply bg-white;
+  @apply rounded-lg;
+  @apply shadow-md;
+  @apply overflow-hidden;
+}
+
+.card .card-image {
+  @apply w-full;
+  @apply object-cover;
+}
+.card .card-image img {
+  @apply w-full;
+  @apply h-48;
+}
+.card .card-title {
+  @apply w-full;
+  @apply p-4;
+  @apply text-black;
+}
+.search-input {
+  @apply w-full p-4;
+  @apply bg-white;
+  @apply rounded-lg;
+  @apply shadow-md;
+  @apply overflow-hidden;
+  @apply outline-none;
+  @apply placeholder:text-gray-400 placeholder:italic;
+  @apply border border-transparent focus:border-blue-800;
+}
