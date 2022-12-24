@@ -24,7 +24,6 @@ specifiers:
   whatwg-fetch: ^3.6.2
 
 dependencies:
-  gif-expert-app: github.com/ImRLopezAG/Gif-expert-app/6e2435bb8a9eb12dbad1af99ee5c87cebfe6bb28
   prop-types: 15.8.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
