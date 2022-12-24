@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useFetchGif } from '../hook/useFetchGif';
 import { GifItem } from './GifItem';
 
@@ -9,7 +10,7 @@ export const GifGrid = ({ category, limit }) => {
       <h2 className='font-bold text-2xl my-2 '>{category}</h2>
       {isLoading && (
         <h3>
-          loading <i className='bi bi-cloud-download'></i>
+          Loading... <i className='bi bi-cloud-download'></i>
         </h3>
       )}
       {images.length === 0 && (
@@ -24,4 +25,9 @@ export const GifGrid = ({ category, limit }) => {
       </div>
     </section>
   );
+};
+
+GifGrid.PropTypes = {
+  category: PropTypes.string.isRequired,
+  limit: PropTypes.string,
 };

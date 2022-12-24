@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 
 export const AddCategory = ({ onNewCategory, onAddLimit }) => {
@@ -10,7 +11,7 @@ export const AddCategory = ({ onNewCategory, onAddLimit }) => {
     setLimit(parseInt(target.value));
   };
 
-  const onSubmit = (event) => {
+  const onSubmit = (event) => {    
     event.preventDefault();
     const value = inputValue.trim();
     const limitValue = limitState;
@@ -25,6 +26,7 @@ export const AddCategory = ({ onNewCategory, onAddLimit }) => {
       <form
         className='flex justify-center items-center'
         onSubmit={(event) => onSubmit(event)}
+        aria-label='form'
       >
         <input
           className='search-input'
@@ -50,4 +52,9 @@ export const AddCategory = ({ onNewCategory, onAddLimit }) => {
       </form>
     </section>
   );
+};
+
+AddCategory.PropTypes = {
+  onAddLimit: PropTypes.func.isRequired,
+  onNewCategory: PropTypes.func.isRequired,
 };
