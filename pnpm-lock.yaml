@@ -11,7 +11,6 @@ specifiers:
   '@vitejs/plugin-react': ^3.0.0
   autoprefixer: ^10.4.13
   babel-jest: ^29.3.1
-  gif-expert-app: github:ImRLopezAG/Gif-expert-app
   jest: ^29.3.1
   jest-environment-jsdom: ^29.3.1
   postcss: ^8.4.20
@@ -5795,13 +5794,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-  github.com/ImRLopezAG/Gif-expert-app/6e2435bb8a9eb12dbad1af99ee5c87cebfe6bb28:
-    resolution: {tarball: https://codeload.github.com/ImRLopezAG/Gif-expert-app/tar.gz/6e2435bb8a9eb12dbad1af99ee5c87cebfe6bb28}
-    name: gif-expert-app
-    version: 1.0.0
-    dependencies:
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-    dev: false
