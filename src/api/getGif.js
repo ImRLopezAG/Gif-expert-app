@@ -9,7 +9,7 @@ export const getGif = async (category, limit) => {
       title: values.title,
       url: values.images.downsized_medium.url,
     }))
-    .sort(() => Math.random() - 10)
+    .sort(() => Math.random() - 0.5)
     .slice(0, limit);
   return Gif;
 };
